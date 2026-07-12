@@ -2,6 +2,9 @@
 
 一个静态 UOS 应用下载商城，由 GitHub Pages 托管。
 
+- 商城地址：https://6408396-star.github.io/uos-app-market/
+- GitHub 仓库：https://github.com/6408396-star/uos-app-market
+
 ## 本地预览
 
 ```powershell
@@ -20,4 +23,3 @@ python -m http.server 4173
 ## 发布
 
 仓库的 GitHub Pages 来源设置为 `main` 分支根目录。
-
