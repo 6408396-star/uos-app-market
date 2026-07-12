@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="统信 UOS 应用下载商城">
+  <title>统信应用商城</title>
+  <link rel="icon" href="assets/store-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" aria-label="统信应用商城">
+      <span class="brand-mark">U</span>
+      <span class="brand-copy">
+        <strong>统信应用商城</strong>
+        <small>UOS APPLICATIONS</small>
+      </span>
+    </div>
+
+    <nav class="primary-nav" aria-label="主导航">
+      <button class="nav-item is-active" type="button" data-view="store">
+        <i data-lucide="layout-grid" aria-hidden="true"></i>
+        <span>应用商城</span>
+      </button>
+      <button class="nav-item" type="button" data-view="downloads">
+        <i data-lucide="download" aria-hidden="true"></i>
+        <span>下载记录</span>
+        <span class="history-count" id="historyCount">0</span>
+      </button>
+    </nav>
+
+    <button class="icon-button theme-toggle" id="themeToggle" type="button" title="切换深色模式" aria-label="切换深色模式">
+      <i data-lucide="moon" aria-hidden="true"></i>
+    </button>
+  </header>
+
+  <main>
+    <section class="store-view" id="storeView">
+      <div class="catalog-shell">
+        <aside class="category-panel" aria-label="应用分类">
+          <h2>应用分类</h2>
+          <div class="category-list" id="categoryList"></div>
+          <div class="platform-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <div>
+              <strong>UOS 软件源</strong>
+              <small>安装包可用</small>
+            </div>
+          </div>
+        </aside>
+
+        <div class="catalog-main">
+          <section class="catalog-heading">
+            <div>
+              <p class="eyebrow">APPLICATION CENTER</p>
+              <h1>发现适合你的应用</h1>
+            </div>
+            <label class="search-box" for="searchInput">
+              <i data-lucide="search" aria-hidden="true"></i>
+              <input id="searchInput" type="search" autocomplete="off" placeholder="搜索应用名称或分类">
+            </label>
+          </section>
+
+          <section class="featured-band" id="featuredBand" aria-label="推荐应用"></section>
+
+          <section class="app-section" aria-labelledby="allAppsTitle">
+            <div class="section-toolbar">
+              <div>
+                <h2 id="allAppsTitle">全部应用</h2>
+                <p id="resultCount">0 个应用</p>
+              </div>
+              <label class="sort-control" for="sortSelect">
+                <span>排序</span>
+                <select id="sortSelect">
+                  <option value="newest">最近更新</option>
+                  <option value="name">应用名称</option>
+                  <option value="size">安装包大小</option>
+                </select>
+              </label>
+            </div>
+            <div class="app-grid" id="appGrid"></div>
+            <div class="empty-state" id="emptyState" hidden>
+              <i data-lucide="search-x" aria-hidden="true"></i>
+              <h3>没有找到应用</h3>
+              <button type="button" id="clearSearch">清除筛选</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="downloads-view" id="downloadsView" hidden>
+      <div class="downloads-shell">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">DOWNLOAD HISTORY</p>
+            <h1>下载记录</h1>
+          </div>
+          <button class="secondary-button" id="clearHistory" type="button">
+            <i data-lucide="trash-2" aria-hidden="true"></i>
+            清空记录
+          </button>
+        </div>
+        <div class="history-table" id="historyTable"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>个人应用发布中心</span>
+    <span>非统信软件技术有限公司官方应用商店</span>
+  </footer>
+
+  <dialog class="app-dialog" id="appDialog">
+    <button class="dialog-close icon-button" id="dialogClose" type="button" title="关闭" aria-label="关闭">
+      <i data-lucide="x" aria-hidden="true"></i>
+    </button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
