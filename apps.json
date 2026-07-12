@@ -1,0 +1,38 @@
+{
+  "store": {
+    "name": "统信应用商城",
+    "updatedAt": "2026-07-13"
+  },
+  "apps": [
+    {
+      "id": "one-click-collage",
+      "name": "一键拼图",
+      "packageName": "uos-one-click-collage_1.0.6_all.deb",
+      "packageType": "DEB",
+      "version": "1.0.6",
+      "category": "图像处理",
+      "summary": "选择照片与拼图模板，快速生成适合打印和预览的高清拼图。",
+      "description": "一款面向日常照片整理与打印场景的拼图工具，支持多种版式、完整显示或自动裁切、生成前预览和自定义导出目录。",
+      "developer": "牡丹街道郭信伟",
+      "releaseDate": "2026-07-13",
+      "architecture": "all 架构",
+      "compatibility": "统信 UOS（Debian 系）",
+      "size": "178 KB",
+      "sizeBytes": 182060,
+      "sha256": "ED93C8C5129BF5053F6DFC0ED96A0EA7ACAFB74D1EAB96B31DB4BA126D97C542",
+      "icon": "assets/one-click-collage-icon.png",
+      "screenshots": [
+        "assets/one-click-collage-preview.png"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/6408396-star/one-click-collage-update/main/releases/uos-one-click-collage_1.0.6_all.deb",
+      "featured": true,
+      "features": [
+        "智能选择 1、2、4、6、9 宫格模板",
+        "支持 JPG、PNG、BMP、WEBP 图片",
+        "生成前预览拼图结果",
+        "完整显示或填满格子两种模式",
+        "导出 A4 高清拼图并记住保存位置"
+      ]
+    }
+  ]
+}
