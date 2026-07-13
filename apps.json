@@ -5,8 +5,41 @@
   },
   "apps": [
     {
+      "id": "uos-app-market",
+      "name": "统信应用商城桌面版",
+      "packageId": "uos-app-market",
+      "packageName": "uos-app-market_1.0.0_all.deb",
+      "packageType": "DEB",
+      "version": "1.0.0",
+      "category": "系统工具",
+      "summary": "在统信 UOS 桌面集中浏览、下载并安装全部自制应用。",
+      "description": "统信应用商城桌面客户端会自动获取在线应用目录，点击安装后下载并校验软件包，再调用 UOS 系统软件包安装器完成授权安装。",
+      "developer": "牡丹街道郭信伟",
+      "releaseDate": "2026-07-13",
+      "architecture": "all 架构",
+      "compatibility": "统信 UOS（Debian 系）",
+      "size": "98 KB",
+      "sizeBytes": 100150,
+      "sha256": "A9743FDB979E7A11783E46565BB476999C9CEB8ADBCB526D4DCD5495D4E1B09D",
+      "icon": "assets/store-icon.png",
+      "screenshots": [
+        "assets/uos-app-market-preview.png"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/6408396-star/uos-app-market/main/releases/uos-app-market_1.0.0_all.deb",
+      "guideUrl": "https://raw.githubusercontent.com/6408396-star/uos-app-market/main/guides/uos-app-market-install-guide.docx",
+      "featured": true,
+      "features": [
+        "集中展示全部自制 UOS 应用",
+        "一键下载并校验安装包 SHA256",
+        "自动调用统信系统软件包安装器",
+        "显示应用版本、大小和安装状态",
+        "在线目录不可用时自动使用离线目录"
+      ]
+    },
+    {
       "id": "one-click-collage",
       "name": "一键拼图",
+      "packageId": "uos-one-click-collage",
       "packageName": "uos-one-click-collage_1.0.6_all.deb",
       "packageType": "DEB",
       "version": "1.0.6",
@@ -25,7 +58,7 @@
         "assets/one-click-collage-preview.png"
       ],
       "downloadUrl": "https://raw.githubusercontent.com/6408396-star/one-click-collage-update/main/releases/uos-one-click-collage_1.0.6_all.deb",
-      "featured": true,
+      "featured": false,
       "features": [
         "智能选择 1、2、4、6、9 宫格模板",
         "支持 JPG、PNG、BMP、WEBP 图片",
