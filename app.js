@@ -214,6 +214,11 @@ function appDialogContent(app) {
   const features = app.features.map((feature) => `
     <li>${icon("circle-check")}<span>${escapeHtml(feature)}</span></li>
   `).join("");
+  const guideLink = app.guideUrl ? `
+    <a class="secondary-button" href="${escapeHtml(app.guideUrl)}">
+      ${icon("file-text")} 安装说明
+    </a>
+  ` : "";
 
   return `
     <section class="dialog-hero">
@@ -230,6 +235,7 @@ function appDialogContent(app) {
           <a class="primary-button" href="${escapeHtml(app.downloadUrl)}" data-download-id="${escapeHtml(app.id)}">
             ${icon("download")} 下载 ${escapeHtml(app.packageType)}
           </a>
+          ${guideLink}
         </div>
       </div>
       <div class="dialog-media">
