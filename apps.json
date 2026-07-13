@@ -51,8 +51,8 @@
       "architecture": "all 架构",
       "compatibility": "统信 UOS（Debian 系）",
       "size": "178 KB",
-      "sizeBytes": 182372,
-      "sha256": "AD42C05A2D1753F292AA87875A4591C0B0F6761F5B4A2A48B00CE165B18F678D",
+      "sizeBytes": 182390,
+      "sha256": "37FC2EDA5B581BF963F5050497CCE97B24CCF9A4FEB898D7EF524A4C35BDE99B",
       "icon": "assets/one-click-collage-icon.png",
       "screenshots": [
         "assets/one-click-collage-preview.png"
